@@ -4,22 +4,46 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConsulTech Login</title>
+    <title>First Partial Proyect</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
   </head>
   <body>
-    <!-- Title Bar -->
+
     <div class="title-bar">
       <div class="title-bar-left">
-        <p>ConsulTech</p>
+        <button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
+        <span class="title-bar-title">ConsulTech</span>
       </div>
     </div>
-      
+    
+    <!-- Login form -->
+    <div class="row">
+      <div class="medium-5 medium-centered large-5 large-centered small-9 small-centered columns">
+        <form class="login">
+          <div class="row column log-in-form">
+            <h4 class="text-center">ConsulTech</h4>
+            <label>Correo
+              <input type="text" class="input-mail">
+            </label>
+            <label>Contraseña
+              <input type="password" class="input-password">
+            </label>
+            <input id="show-password" type="checkbox"><label for="show-password">Mostrar Contraseña</label>
+            <p><a type="submit" class="button expanded">Iniciar Sesión</a></p>
+            <p class="text-center forget"><a href="#" class="forget">Olvidaste tu contraseña?</a></p>
+          </div>
+        </form>
+      </div>
+      <h6 class="error-msg text-center">La información introducida no es válida. Inténtelo de nuevo, por favor. </h6>
+    </div>
+
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

@@ -1,0 +1,77 @@
+body{
+	background-image: url("../img/consultorio.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.title-bar{
+	background-color: #012442;
+	height: 30px;
+	padding-bottom: 3%;
+	padding-top: 1%;
+}
+
+.title-bar-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.logout{
+	color: black;
+	font-size: 17px;
+	font-weight: bold;
+	background-color: white;
+	background-image: url("../img/logoutBlack.png");
+	background-position: left;
+	background-size: 35%;
+	text-align: right;
+	background-repeat: no-repeat;
+	width: 85px;
+	height: 40px;
+	transition: background-color .5s;
+	padding-right: 10px;
+}
+
+.logout:hover{
+	color: white;
+	background-image: url("../img/logout.png");
+	background-color: #011526;
+}
+
+.side{
+	background-color: #011526;
+	height: 100vh;
+	width: 13%;
+	position: fixed;
+	padding: 0;
+}
+
+ul{
+	margin: 0;
+}
+
+li{
+	list-style: none;
+	padding-bottom: 20%;
+	padding-top: 20%;
+	text-align: center;
+	transition: background-color .5s;
+	transition: color 0;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	user-select: none;
+}
+
+li:hover{
+	background-color: white;
+	color: #0e4472;
+}
+
+.row{
+	background-color: white;
+	height: 110vh;
+}
+

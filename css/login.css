@@ -1,0 +1,46 @@
+body{
+	background-image: url("../img/consultorio.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.title-bar{
+	background-color: #012442;
+}
+
+.login{
+	background-color: rgba(12, 58, 104, .7);
+	padding: 10%;
+	border-radius: 12px;
+	margin-top: 40%;
+}
+
+.error-msg{
+	display: none;
+}
+
+h4{
+	color: white;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+label{
+	color: white;
+}
+
+.forget{
+	color: white;
+	text-decoration: underline;
+}
+
+
+.button{
+    background-color: #03325b;
+}
+
+.button:hover{
+    background-color: #074a84;
+}
