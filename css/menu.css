@@ -44,6 +44,7 @@ body{
 	background-color: #011526;
 	height: 100vh;
 	padding: 0;
+	width: 15%;
 }
 
 ul.side-nav{
@@ -58,7 +59,7 @@ ul.side-nav{
 	transition: background-color .5s;
 	transition: color 0;
 	color: white;
-	font-size: 18px;
+	font-size: 23px;
 	font-weight: bold;
 	user-select: none;
 	padding-right: 10%;
