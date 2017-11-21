@@ -43,26 +43,30 @@ body{
 .side{
 	background-color: #011526;
 	height: 100vh;
-	width: 13%;
-	position: fixed;
 	padding: 0;
 }
 
-ul{
+ul.side-nav{
 	margin: 0;
 }
 
-li{
+.nav-item{
 	list-style: none;
 	padding-bottom: 20%;
 	padding-top: 20%;
-	text-align: center;
+	text-align: right;
 	transition: background-color .5s;
 	transition: color 0;
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	user-select: none;
+	padding-right: 10%;
+}
+
+.current{
+	background-color: white;
+	color: #0e4472;
 }
 
 li:hover{
@@ -70,8 +74,56 @@ li:hover{
 	color: #0e4472;
 }
 
-.row{
-	background-color: white;
-	height: 110vh;
+#consulta{
+	background-image: url("../img/consultWhite.png");
+	background-position: left;
+	background-size: 38%;
+	background-repeat: no-repeat;
 }
 
+#directorio{
+	background-image: url("../img/directoryWhite.png");
+	background-position: left;
+	background-size: 33%;
+	background-repeat: no-repeat;
+}
+
+#personalizar{
+	background-image: url("../img/brushWhite.png");
+	background-position: left;
+	background-size: 36%;
+	background-repeat: no-repeat;
+}
+
+#herramientas{
+	background-image: url("../img/toolsWhite.png");
+	background-position: left;
+	background-size: 33%;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1600px) {
+    .nav-item{
+    	font-size: 0;
+    	padding-top: 30%;
+    	padding-bottom: 30%;
+    }
+
+    #consulta{
+		background-position: center;
+	}
+	#directorio{
+		background-position: center;
+	}
+	#personalizar{
+		background-position: center;
+	}
+	#herramientas{
+		background-position: center;
+	}
+
+    .side{
+    	width: 10%;
+    	margin-left: 0;
+    }
+}
