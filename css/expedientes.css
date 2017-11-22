@@ -1,0 +1,184 @@
+.ventana{
+	background-color: white;
+	padding: 0;
+}
+
+.header{
+	padding: 0;
+	padding-left: 1%;
+	color: white;
+	background-color: #07243d;
+	font-size: 20px;
+}
+
+.sub-menu-container{
+	padding: 0;
+}
+
+.sub-menu{
+	background-color: white;
+	border-bottom: 3px solid #07243d;
+}
+
+.sub-menu li{
+	text-align: center;
+	width: 20%;
+	border-right: 3px solid #07243d;
+}
+
+.selected a{
+	color: white !important;
+}
+
+.sub-menu li a{
+	color: #0f3d66;
+}
+
+.sub-menu li a:hover{
+	color: white;
+}
+
+/* In charge of deciding which container of the sub menu is going to be displayed*/
+#visible{
+	display: inline-block !important;
+}
+
+/* Selects the current sub menu */
+.current-submenu{
+	background-color: #07243d;
+}
+.current-submenu a{
+	color: white !important;
+}
+
+/*  Style of default-container  */
+.default-container{
+	margin-top: 50px;
+}
+
+h2{
+	color: #0f3d66;
+	font-size: 25px;
+}
+
+.search {
+  width: 100%;
+}
+
+.searchTerm {
+  width: 80%;
+  float: left;
+  border: 3px solid #0f3d66;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton{
+  position: relative;
+  width: 50px;
+  height: 45px;
+  background: #0f3d66;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 50px;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:hover{
+	background-color: #8a8b8c !important;
+}
+
+.table-headers:hover{
+	background-color: white !important;
+}
+
+#checked{
+	background-color: #8a8b8c !important;
+}
+
+/* Style of new Patient*/
+.menu-nuevo{
+	background-color: white;
+}
+
+.menu-nuevo li{
+	text-align: center;
+	width: 40%;
+	background-color: #0f3d66;
+}
+
+.nuevo-container{
+	padding: 0;
+}
+
+.nuevo-nav{
+
+}
+
+.nuevo-item{
+	list-style: none;
+	padding-bottom: 20%;
+	text-align: center;
+	padding-top: 20%;
+	transition: background-color .5s;
+	color: #011526;
+	font-size: 18px;
+	font-weight: bold;
+	padding-right: 10%;
+	background-color: white;
+	border-right: 3px solid #011526;
+	border-bottom: 3px solid #011526;
+}
+
+.nuevo-item:first-child{
+	border-top: 3px solid #011526;
+}
+
+.nuevo-item:hover{
+	background-color: #bababa;
+	color: white;
+}
+
+.current-miniItem{
+	background-color: #bababa;
+	color: white;
+}
+
+.tabs-title > a{
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* Style of open record */
+.abrir-container{
+	padding: 0;
+}
+
+.actualizar-container{
+	padding: 0;
+}

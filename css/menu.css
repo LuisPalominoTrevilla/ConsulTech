@@ -8,9 +8,7 @@ body{
 
 .title-bar{
 	background-color: #012442;
-	height: 30px;
-	padding-bottom: 3%;
-	padding-top: 1%;
+	height: 5%;
 }
 
 .title-bar-title{
@@ -44,6 +42,7 @@ body{
 	background-color: #011526;
 	height: 100vh;
 	padding: 0;
+	position: relative;
 	width: 15%;
 }
 
@@ -57,7 +56,6 @@ ul.side-nav{
 	padding-top: 20%;
 	text-align: right;
 	transition: background-color .5s;
-	transition: color 0;
 	color: white;
 	font-size: 23px;
 	font-weight: bold;
@@ -70,7 +68,7 @@ ul.side-nav{
 	color: #0e4472;
 }
 
-li:hover{
+.nav-item:hover{
 	background-color: white;
 	color: #0e4472;
 }

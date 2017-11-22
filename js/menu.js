@@ -5,16 +5,22 @@ var consultaActiva = false;
 var directorioActivo = false;
 var persActivo = false;
 var herraActiva = false;
-var array = $(".side-nav").children();
+var array = $(".primary-nav").children();
 
-//$(window).scroll(function(){
-// 		var pTop = $(window).scrollTop();
-//    	if(pTop >= firstTop){
-//    	    $('.side').css({'position':'fixed', "top": 0});
-//    	}else{
-//    	    $('.side').css({'position':'relative'});
-//    	}
-//});
+/**$(window).scroll(function(){
+ 		var pTop = $(window).scrollTop();
+
+ 		console.log("first: " + firstTop + " y " +pTop);
+    	if(pTop >= firstTop){
+    		console.log("Ya es mayor");
+    		$('.ventana').css('margin-left',"16%");
+    	    $('.side').css({'position':'fixed', "top": 0});
+    	}else{
+    		console.log("No es mayor");
+    	    $('.side').css({'position':'relative'});
+    	    $('.ventana').css('margin-left',"1%");
+    	}
+});**/
 
 $(".logout").click(function(){
 	window.open("index.html", "_self");

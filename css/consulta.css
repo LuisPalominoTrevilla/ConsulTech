@@ -1,0 +1,64 @@
+.menu{
+	background-color: #0f3d66;
+	padding: 0;
+}
+
+.menu li a{
+	color: white;
+	height: 5rem;
+	line-height: 4rem;
+	font-size: 22px;
+}
+.menu li{
+	width: 12%;
+	text-align: right;
+	border-right: 3px solid white;
+	transition: background-color .5s;
+}
+
+.menu li:hover{
+	background-color: #07243d;
+}
+
+.menu li:last-child{
+	border-right: none;
+}
+
+#records{
+	background-image: url("../img/record.png");
+	background-repeat: no-repeat;
+	background-size: 25%;
+	background-position: left;
+}
+
+#medics{
+	background-image: url("../img/doctor.png");
+	background-repeat: no-repeat;
+	background-size: 27%;
+	background-position: left;	
+}
+
+#citas{
+	background-image: url("../img/cita.png");
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: left;	
+}
+
+#ingresos{
+	background-image: url("../img/ingreso.png");
+	background-repeat: no-repeat;
+	background-size: 28%;
+	background-position: left;	
+}
+
+#stats{
+	background-image: url("../img/stats.png");
+	background-repeat: no-repeat;
+	background-size: 28%;
+	background-position: left;	
+}
+
+.selected{
+	background-color: #07243d;
+}
