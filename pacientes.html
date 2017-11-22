@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expedientes</title>
+    <title>Pacientes</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/consulta.css">
-    <link rel="stylesheet" href="css/expedientes.css">
+    <link rel="stylesheet" href="css/directorio.css">
+    <link rel="stylesheet" href="css/pacientes.css">
   </head>
   <body>
 
@@ -24,8 +25,8 @@
     
     <div class="large-2 columns side">
         <ul class="side-nav primary-nav">
-          <li id="consulta" class="current nav-item">Consulta</li>
-          <li id="directorio" class="nav-item">Directorio</li>
+          <li id="consulta" class="nav-item">Consulta</li>
+          <li id="directorio" class="current nav-item">Directorio</li>
           <li id="personalizar" class="nav-item">Personalizar</li>
           <li id="herramientas" class="nav-item">Herramientas</li>
         </ul>
@@ -34,45 +35,23 @@
     <div class="large-10 columns ventana" style="margin-left: 1%">
       <div class="large-12 columns" style="padding: 0">
         <ul class="menu">
-          <li id="records" class="selected">
-            <a href="expedientes.html">Expedientes</a>
+          <li id="pacientes" class="selected">
+            <a href="pacientes.html">Pacientes</a>
           </li>
-          <li id="medics">
-            <a href="medicos.html">Medicos</a>
+          <li id="hospitales">
+            <a href="hospitales.html">Hospitales</a>
           </li>
-          <li id="citas">
-            <a href="citas.html">Citas</a>
-          </li>
-          <li id="ingresos">
-            <a href="ingresos.html">Ingresos</a>
-          </li>
-          <li id="stats">
-            <a href="estadisticas.html">Estadisticas</a>
+          <li id="medicamentos">
+            <a href="medicamentos.html">Medicamentos</a>
           </li>
         </ul>
       </div>
       <div class="large-12 columns ventana">
         <!-- Header sub-menus -->
         <div class="large-12 columns header">
-          Control de pacientes
+          Directorio de pacientes
         </div>
-        <!-- sub menus -->
-        <div class="large-12 columns sub-menu-container">
-          <ul class="menu sub-menu">
-            <li id="nuevo">
-              <a>Nuevo Paciente</a>
-            </li>
-            <li id="abrir">
-              <a >Abrir Expediente</a>
-            </li>
-            <li id="actualizar">
-              <a>Actualizar Datos</a>
-            </li>
-            <li id="baja">
-              <a>Baja Paciente</a>
-            </li>
-          </ul>
-        </div>
+        
         <!-- Containers -->
         <div class="default-container large-12 columns" id="visible">
           <h2>Buscar Paciente</h2>
@@ -100,6 +79,6 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/menu.js"></script>    
     <script src="js/vue.js"></script>
-    <script src="js/expedientes.js"></script>
+    <script src="js/pacientes.js"></script>
   </body>
 </html>

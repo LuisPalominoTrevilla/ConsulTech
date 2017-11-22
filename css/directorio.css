@@ -1,0 +1,50 @@
+.menu{
+	background-color: #0f3d66;
+	padding: 0;
+}
+
+.menu li a{
+	color: white;
+	height: 5rem;
+	line-height: 4rem;
+	font-size: 22px;
+}
+.menu li{
+	width: 12%;
+	text-align: center;
+	border-right: 3px solid white;
+	transition: background-color .5s;
+}
+
+.menu li:hover{
+	background-color: #07243d;
+}
+
+.menu li:last-child{
+	border-right: none;
+}
+
+#pacientes{
+	background-image: url("../img/patient.png");
+	background-repeat: no-repeat;
+	background-size: 19%;
+	background-position: left;
+}
+
+#hospitales{
+	background-image: url("../img/hospital.png");
+	background-repeat: no-repeat;
+	background-size: 23%;
+	background-position: left;	
+}
+
+#medicamentos{
+	background-image: url("../img/meds.png");
+	background-repeat: no-repeat;
+	background-size: 18%;
+	background-position: left;	
+}
+
+.selected{
+	background-color: #07243d;
+}

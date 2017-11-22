@@ -1,19 +1,24 @@
 
 var array = $(".sub-menu").children();
-var selectedUser;
+var selectedMedic;
 
 array = [].slice.call(array);
 
 array.forEach( function(arrayItem){
 	arrayItem.onclick = function(){
-		if(arrayItem.id === "abrir" || arrayItem.id === "actualizar" || arrayItem.id === "baja"){
-			if(selectedUser == null){
-				window.alert("Seleccione un paciente");
+		if(arrayItem.id === "eliminarMedico" || arrayItem.id === "modificarMedico"){
+			if(selectedMedic == null){
+				window.alert("Seleccione un medico");
 				return;
 			}
+      return;
 		}
 		window.open(arrayItem.id + ".html", "_self");
 	};
+});
+
+$(".salir").click(function(){
+	window.open("medicos.html", "_self");
 });
 
 var vm = new Vue({
@@ -69,28 +74,15 @@ var vm = new Vue({
     name: "Valerie Kent"
   }
 ]
-				},
-				methods: {
-					algo: function(){
-						this.hora = 0;
-						this.minuto = 0;
-						this.segundo = 0;
-					},
-					eliminar: function(){
-						this.artistas.pop();
-					},
-					agregar: function(nombre){
-						this.artistas.push(nombre);
-					}
 				}
 });
 
-var arr = $(".pacientes").toArray();
+var arr = $(".medicos").toArray();
 arr.forEach(function(arrayItem){
 	
 	arrayItem.onclick = function(){
 		arrayItem.id = "checked";
-		selectedUser = arrayItem;
+		selectedMedic = arrayItem;
 		arr.forEach(function(arrayItem2){
 
 			if(arrayItem2 != arrayItem){

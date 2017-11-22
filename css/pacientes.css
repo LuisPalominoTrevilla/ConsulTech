@@ -170,20 +170,3 @@ tr:hover{
 	font-weight: bold;
 	font-size: 18px;
 }
-
-/* Style of open record */
-.abrir-container{
-	padding: 0;
-}
-
-.actualizar-container{
-	padding: 0;
-}
-
-.baja-container{
-	padding: 0;
-}
-
-.columns:last-child:not(:first-child){
-	float: right !important;
-}

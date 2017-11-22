@@ -1,21 +1,3 @@
-
-var array = $(".sub-menu").children();
-var selectedUser;
-
-array = [].slice.call(array);
-
-array.forEach( function(arrayItem){
-	arrayItem.onclick = function(){
-		if(arrayItem.id === "abrir" || arrayItem.id === "actualizar" || arrayItem.id === "baja"){
-			if(selectedUser == null){
-				window.alert("Seleccione un paciente");
-				return;
-			}
-		}
-		window.open(arrayItem.id + ".html", "_self");
-	};
-});
-
 var vm = new Vue({
 				el: "#app",
 				data: {
@@ -69,20 +51,7 @@ var vm = new Vue({
     name: "Valerie Kent"
   }
 ]
-				},
-				methods: {
-					algo: function(){
-						this.hora = 0;
-						this.minuto = 0;
-						this.segundo = 0;
-					},
-					eliminar: function(){
-						this.artistas.pop();
-					},
-					agregar: function(nombre){
-						this.artistas.push(nombre);
-					}
-				}
+	},
 });
 
 var arr = $(".pacientes").toArray();

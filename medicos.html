@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expedientes</title>
+    <title>Medicos</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/consulta.css">
@@ -34,10 +34,10 @@
     <div class="large-10 columns ventana" style="margin-left: 1%">
       <div class="large-12 columns" style="padding: 0">
         <ul class="menu">
-          <li id="records" class="selected">
+          <li id="records">
             <a href="expedientes.html">Expedientes</a>
           </li>
-          <li id="medics">
+          <li id="medics" class="selected">
             <a href="medicos.html">Medicos</a>
           </li>
           <li id="citas">
@@ -54,40 +54,37 @@
       <div class="large-12 columns ventana">
         <!-- Header sub-menus -->
         <div class="large-12 columns header">
-          Control de pacientes
+          Medicos
         </div>
         <!-- sub menus -->
         <div class="large-12 columns sub-menu-container">
           <ul class="menu sub-menu">
-            <li id="nuevo">
-              <a>Nuevo Paciente</a>
+            <li id="nuevoMedico">
+              <a>Nuevo</a>
             </li>
-            <li id="abrir">
-              <a >Abrir Expediente</a>
+            <li id="modificarMedico">
+              <a>Modificar</a>
             </li>
-            <li id="actualizar">
-              <a>Actualizar Datos</a>
-            </li>
-            <li id="baja">
-              <a>Baja Paciente</a>
+            <li id="eliminarMedico">
+              <a>Eliminar</a>
             </li>
           </ul>
         </div>
         <!-- Containers -->
-        <div class="default-container large-12 columns" id="visible">
-          <h2>Buscar Paciente</h2>
+        <div class="default-container large-12 columns">
+          <h2>Buscar Medico</h2>
           <div class="search large-12 columns">
-            <input type="text" class="searchTerm" placeholder="Buscar un paciente">
+            <input type="text" class="searchTerm" placeholder="Buscar un medico">
               <button type="submit" class="searchButton"/>
           </div>
           <div class="large-12 columns" id="app">
             <table>
               <tr class="table-headers">
-                <th style="width: 10%">Expediente</th>
-                <th>Paciente</th>
+                <th style="width: 2%"></th>
+                <th>Nombre del Medico</th>
               </tr>
-              <tr v-for="record in records" class="pacientes">
-                <td>{{record.numero}}</td>
+              <tr v-for="record in records" class="medicos">
+                <td></td>
                 <td>{{record.name}}</td>
               </tr>
             </table>
@@ -100,6 +97,6 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/menu.js"></script>    
     <script src="js/vue.js"></script>
-    <script src="js/expedientes.js"></script>
+    <script src="js/medicos.js"></script>
   </body>
 </html>
