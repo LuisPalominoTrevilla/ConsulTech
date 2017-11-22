@@ -1,13 +1,9 @@
 
 var array = $(".sub-menu").children();
-var miniMenu = $(".nuevo-nav").children();
-var previous;
 var selectedUser;
 
 array = [].slice.call(array);
-miniMenu = [].slice.call(miniMenu);
 
-/* hides the current container and displays the selected one*/
 array.forEach( function(arrayItem){
 	arrayItem.onclick = function(){
 		if(arrayItem.id === "abrir" || arrayItem.id === "actualizar" || arrayItem.id === "baja"){
@@ -16,30 +12,9 @@ array.forEach( function(arrayItem){
 				return;
 			}
 		}
-		disselect();
-		$("#visible").hide();
-		$("#visible").attr("id", "");
-		$("." + arrayItem.id +"-container").attr("id", "visible");
-		if(previous != null){
-			$("#"+previous).attr("class", "");
-		}
-		$("#" + arrayItem.id).attr("class", "current-submenu");
-		previous = arrayItem.id;
-		dissapearMiniMenuContainers();
-		
+		window.open(arrayItem.id + ".html", "_self");
 	};
 });
-
-/* Returns to the default-container */
-$(".salir").click(function(){
-	$("#visible").hide();
-	if(previous != null){
-			$("#"+previous).attr("class", "");
-		}
-	$("#visible").attr("id", "");
-	$(".default-container").attr("id", "visible");
-});
-
 
 var vm = new Vue({
 				el: "#app",
@@ -84,40 +59,3 @@ arr.forEach(function(arrayItem){
 		});
 	};
 });
-
-// Ocultar tabs innecesarias
-$(".nuevo-container").hide();
-$(".abrir-container").hide();
-$(".actualizar-container").hide();
-$(".baja-container").hide();
-
-function disselect(){
-	miniMenu.forEach(function(arrayItem){
-		arrayItem.className = "nuevo-item";
-	});
-}
-
-function dissapearMiniMenuContainers(){
-	$(".Identificacion").show();
-	
-	miniMenu[0].className = "nuevo-item current-miniItem";
-	miniMenu[2].className = "nuevo-item current-miniItem";
-	miniMenu[9].className = "nuevo-item current-miniItem";
-	$(".Antecedentes").hide();
-	$(".Visitas").hide();
-	$(".Estudios-Lab").hide();
-	$(".Resultados").hide();
-	$(".Hospitalizacion").hide();
-	$(".Imagenes").hide();
-	/* Modifies selection in mini menu */
-	miniMenu.forEach(function(arrayItem){
-		arrayItem.onclick = function(){
-			$("." + $(".current-miniItem").html()).hide();
-			$(".current-miniItem").attr("class", "nuevo-item");
-			arrayItem.className = "nuevo-item current-miniItem";
-			$("." + arrayItem.innerHTML).show();
-		};
-	});
-}
-
-dissapearMiniMenuContainers();

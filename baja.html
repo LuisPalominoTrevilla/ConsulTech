@@ -68,38 +68,29 @@
             <li id="actualizar">
               <a>Actualizar Datos</a>
             </li>
-            <li id="baja">
+            <li id="baja" class="current-submenu">
               <a>Baja Paciente</a>
             </li>
           </ul>
         </div>
-        <!-- Containers -->
-        <div class="default-container large-12 columns" id="visible">
-          <h2>Buscar Paciente</h2>
-          <div class="search large-12 columns">
-            <input type="text" class="searchTerm" placeholder="Buscar un paciente">
-              <button type="submit" class="searchButton"/>
+
+        <div class="baja-container large-12 columns">
+          <div class="large-12 columns" style="padding: 0; margin-bottom: 2%">
+            <ul class="menu menu-nuevo">
+              <li class="salir">
+                <a>Regresar</a>
+              </li>
+            </ul>
           </div>
-          <div class="large-12 columns" id="app">
-            <table>
-              <tr class="table-headers">
-                <th style="width: 10%">Expediente</th>
-                <th>Paciente</th>
-              </tr>
-              <tr v-for="record in records" class="pacientes">
-                <td>{{record.numero}}</td>
-                <td>{{record.nombre}}</td>
-              </tr>
-            </table>
-          </div>
+          
         </div>
       </div>
-      </div>
+    </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/menu.js"></script>    
     <script src="js/vue.js"></script>
-    <script src="js/expedientes.js"></script>
+    <script src="js/actualizarDatos.js"></script>
   </body>
 </html>

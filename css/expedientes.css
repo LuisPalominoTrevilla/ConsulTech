@@ -135,10 +135,6 @@ tr:hover{
 	padding: 0;
 }
 
-.nuevo-nav{
-
-}
-
 .nuevo-item{
 	list-style: none;
 	padding-bottom: 20%;
@@ -163,7 +159,7 @@ tr:hover{
 	color: white;
 }
 
-.current-miniItem{
+#current-miniItem{
 	background-color: #bababa;
 	color: white;
 }
@@ -181,4 +177,12 @@ tr:hover{
 
 .actualizar-container{
 	padding: 0;
+}
+
+.baja-container{
+	padding: 0;
+}
+
+.columns:last-child:not(:first-child){
+	float: right !important;
 }
