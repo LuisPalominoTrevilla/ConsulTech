@@ -1,6 +1,5 @@
 $(document).foundation()
 
-var firstTop = $('.side').offset().top;
 var consultaActiva = false;
 var directorioActivo = false;
 var persActivo = false;
@@ -84,3 +83,20 @@ array.forEach( function(arrayItem){
 		window.open(arrayItem.id + ".html", "_self");
 	};
 });
+
+
+/*---------------------------------------------------------*/
+
+// Controls Off Canvas Toggle
+
+function openNav() {
+    $("#mySidenav").css("width", "15%");
+    $("#main").css("marginLeft", "15%");
+    $("#main").css("Opacity", ".4");
+}
+
+function closeNav() {
+    $("#mySidenav").css("width", "0");
+    $("#main").css("marginLeft", "0");
+    $("#main").css("Opacity", "1");
+}

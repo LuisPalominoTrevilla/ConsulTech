@@ -13,12 +13,7 @@ var arr = $(".citas").toArray();
 arr.forEach(function(arrayItem){
 	
 	arrayItem.onclick = function(){
+		$("#checked").attr("id", "");
 		arrayItem.id = "checked";
-		arr.forEach(function(arrayItem2){
-
-			if(arrayItem2 != arrayItem){
-				arrayItem2.id = "";
-			}
-		});
 	};
 });

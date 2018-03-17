@@ -1,3 +1,4 @@
+
 .ventana{
 	background-color: white;
 	padding: 0;
@@ -5,10 +6,17 @@
 
 .header{
 	padding: 0;
-	padding-left: 1%;
 	color: white;
-	background-color: #07243d;
+	background-color: rgba(25, 94, 71, .7);
 	font-size: 20px;
+	padding-left: 3%;
+}
+
+.ventana-container{
+	margin-top: 3%;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%; 
 }
 
 .sub-menu-container{

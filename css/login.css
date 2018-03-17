@@ -7,24 +7,39 @@ body{
 }
 
 .title-bar{
-	background-color: #012442;
+	background-color: #041736;
 }
 
 .login{
-	background-color: rgba(12, 58, 104, .7);
 	padding: 10%;
 	border-radius: 12px;
 	margin-top: 40%;
+	background: #041736;
+	background: -webkit-linear-gradient(top, #0a0f17, #1092be);
 }
 
 .error-msg{
 	display: none;
 }
 
+.logo{
+  background-color: #ffffff;
+  padding: 3%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.logo img{
+  width: 70px;
+}
+
 h4{
 	color: white;
 	font-size: 26px;
 	font-weight: bold;
+  margin-top: 5%;
 }
 
 label{
@@ -34,13 +49,121 @@ label{
 .forget{
 	color: white;
 	text-decoration: underline;
+	margin-top: 5%;
+}
+
+.btn-wrapper{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-but{
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+
+  background-color: rgba(255, 255, 255, 1);
+  transition: background-color .3s;
+}
+
+.login-but:hover{
+	color: white;
+	background-color: rgba(4, 23, 54, .4);
 }
 
 
-.button{
-    background-color: #03325b;
+
+/*--------------------------------------------*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid rgba(255,255,255,0.24);
+  margin-bottom: 30px;
 }
 
-.button:hover{
-    background-color: #074a84;
+.input100 {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0;
+
+  box-shadow: none;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent !important;
+  border: none;
+  padding: 0 5px 0 38px;
+}
+
+/*---------------------------------------------*/ 
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #fff;
+}
+
+.focus-input100::after {
+  font-family: Material-Design-Iconic-Font;
+  font-size: 22px;
+  color: #fff;
+
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  padding-left: 5px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus {
+  padding-left: 5px;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.input100:focus + .focus-input100::after {
+  top: -22px;
+  font-size: 18px;
+}
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
 }

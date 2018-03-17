@@ -1,55 +1,91 @@
-.menu{
-	background-color: #0f3d66;
+.menu-consulta{
+	background-color: rgba(4, 23, 54, .7);
 	padding: 0;
+	padding-left: 15%;
 }
 
-.menu li a{
-	color: white;
-	height: 5rem;
-	line-height: 4rem;
-	font-size: 22px;
-}
-.menu li{
-	width: 12%;
+.menu-consulta li{
+	width: 15%;
 	text-align: right;
-	border-right: 3px solid white;
-	transition: background-color .5s;
+	text-align: center;
+	margin-right: 20px;
+	transition: background-color .3s;
 }
 
-.menu li:hover{
-	background-color: #07243d;
+.menu-consulta li:hover{
+	background-color: #041736;
 }
 
-.menu li:last-child{
-	border-right: none;
+.menu-consulta li a{
+	color: white;
+	text-align: right;
+    width:100%;
+    height:100%;
+	line-height: 4rem;
+	display: block;
+  	padding-right: 15px !important;
+  	text-decoration: none;
+  	margin-right: 40px;
+  	padding: 0;
+}
+
+.menu-consulta li a,
+.menu-consulta li a:after,
+.menu-consulta li a:before{
+	transition: all .5s;
+}
+
+.menu-consulta li a {
+  position: relative;
+}
+
+.menu-consulta li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ffffff;
+  height: 3px;
+}
+
+.menu-consulta li a:hover:after {
+  width: 100%;
+}
+
+.menu-consulta .selected a:hover:after {
+  width: 0%;
 }
 
 #records{
 	background-image: url("../img/record.png");
 	background-repeat: no-repeat;
 	background-size: 25%;
-	background-position: left;
+	background-position: 10%;
 }
 
 #medics{
 	background-image: url("../img/doctor.png");
 	background-repeat: no-repeat;
-	background-size: 27%;
-	background-position: left;	
+	background-size: 22%;
+	background-position: 10%;	
 }
 
 #citas{
 	background-image: url("../img/cita.png");
 	background-repeat: no-repeat;
-	background-size: 30%;
-	background-position: left;	
+	background-size: 23%;
+	background-position: 10%;	
 }
 
 #ingresos{
 	background-image: url("../img/ingreso.png");
 	background-repeat: no-repeat;
-	background-size: 28%;
-	background-position: left;	
+	background-size: 23%;
+	background-position: 10%;
 }
 
 #stats{
@@ -60,5 +96,23 @@
 }
 
 .selected{
-	background-color: #07243d;
+	background-color: #041736;
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu-consulta li{
+    	display: block;
+    	margin: 0 !important;
+    	width: 100%;
+    	background-size: 5% !important;
+    	background-position: center !important;
+    }
+
+    .menu-consulta{
+    	padding-left: 0;
+    }
+
+    .menu-consulta li a{
+    	font-size: 0;
+    }
 }

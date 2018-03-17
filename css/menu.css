@@ -4,16 +4,24 @@ body{
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	transition: background-color .5s;
+}
+
+html{
+	overflow-x: hidden;
 }
 
 .title-bar{
-	background-color: #012442;
-	height: 5%;
+	background-color: #041736;
 }
 
 .title-bar-title{
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: bold;
+}
+
+.menu-icon{
+	width: 30px;
 }
 
 .logout{
@@ -27,23 +35,49 @@ body{
 	text-align: right;
 	background-repeat: no-repeat;
 	width: 85px;
-	height: 40px;
+	height: 15px;
 	transition: background-color .5s;
 	padding-right: 10px;
+	margin-bottom: 0;
+	line-height: 5px;
 }
 
 .logout:hover{
 	color: white;
 	background-image: url("../img/logout.png");
-	background-color: #011526;
+	background-color: #041736;
 }
 
 .side{
 	background-color: #011526;
-	height: 100vh;
-	padding: 0;
 	position: relative;
-	width: 15%;
+	height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.closebtn{
+	color: #ffffff;
+}
+
+.side .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0;
 }
 
 ul.side-nav{
@@ -57,10 +91,15 @@ ul.side-nav{
 	text-align: right;
 	transition: background-color .5s;
 	color: white;
-	font-size: 23px;
+	font-size: 20px;
 	font-weight: bold;
 	user-select: none;
 	padding-right: 10%;
+	background-position: left;
+	background-size: 25%;
+	background-repeat: no-repeat;
+	width: inherit;
+	cursor: pointer;
 }
 
 .current{
@@ -75,37 +114,26 @@ ul.side-nav{
 
 #consulta{
 	background-image: url("../img/consultWhite.png");
-	background-position: left;
-	background-size: 38%;
-	background-repeat: no-repeat;
 }
 
 #directorio{
 	background-image: url("../img/directoryWhite.png");
-	background-position: left;
-	background-size: 33%;
-	background-repeat: no-repeat;
 }
 
 #personalizar{
 	background-image: url("../img/brushWhite.png");
-	background-position: left;
-	background-size: 36%;
-	background-repeat: no-repeat;
 }
 
 #herramientas{
 	background-image: url("../img/toolsWhite.png");
-	background-position: left;
-	background-size: 33%;
-	background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1200px) {
     .nav-item{
     	font-size: 0;
     	padding-top: 30%;
     	padding-bottom: 30%;
+    	background-size: 35%;
     }
 
     #consulta{
@@ -120,9 +148,4 @@ ul.side-nav{
 	#herramientas{
 		background-position: center;
 	}
-
-    .side{
-    	width: 10%;
-    	margin-left: 0;
-    }
 }

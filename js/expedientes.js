@@ -12,6 +12,9 @@ array.forEach( function(arrayItem){
 				return;
 			}
 		}
+    /* El siguiente pedazo de codigo puede ser usado para pasar parámetro POST*/
+    //console.log(selectedUser.childNodes[0].innerText);
+    selectedUser = null;
 		window.open(arrayItem.id + ".html", "_self");
 	};
 });
@@ -89,13 +92,14 @@ var arr = $(".pacientes").toArray();
 arr.forEach(function(arrayItem){
 	
 	arrayItem.onclick = function(){
+    // se seleccionó un paciente
+    $("#checked").attr("id", "");
 		arrayItem.id = "checked";
 		selectedUser = arrayItem;
-		arr.forEach(function(arrayItem2){
-
-			if(arrayItem2 != arrayItem){
-				arrayItem2.id = "";
-			}
-		});
+    $(".user-id").attr("value", selectedUser.childNodes[0].innerText);
+    $(".user-options").css("cursor", "pointer");
 	};
 });
+
+// Default
+$(".user-options").css("cursor", "not-allowed");

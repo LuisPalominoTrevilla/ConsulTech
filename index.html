@@ -4,35 +4,49 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Partial Proyect</title>
+    <title>ConsulTech</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
   </head>
   <body>
 
     <div class="title-bar">
       <div class="title-bar-left">
-        <button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
         <span class="title-bar-title">ConsulTech</span>
       </div>
     </div>
     
     <!-- Login form -->
     <div class="row">
+
       <div class="medium-5 medium-centered large-5 large-centered small-9 small-centered columns">
+        
         <form class="login">
+          <div class="logo text-center">
+            <img src="img/logo.png">
+          </div>
           <div class="row column log-in-form">
             <h4 class="text-center">ConsulTech</h4>
-            <label>Correo
-              <input type="text" class="input-mail">
-            </label>
-            <label>Contraseña
-              <input type="password" class="input-password">
-            </label>
+            <div class="wrap-input100">
+            <input class="input100" type="text" name="username" placeholder="Correo">
+            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+          </div>
+
+          <div class="wrap-input100" >
+            <input class="input100 input-password" type="password" name="pass" placeholder="Password">
+            <span class="focus-input100" data-placeholder="&#xf191;"></span>
+          </div>
+
             <input id="show-password" type="checkbox"><label for="show-password">Mostrar Contraseña</label>
-            <p><a type="submit" class="button expanded login-but">Iniciar Sesión</a></p>
+            
+            <div class="btn-wrapper">
+              <input type="submit" class="login-but" value="Iniciar Sesion">
+            </div>
+            
             <p class="text-center forget"><a href="#" class="forget">Olvidaste tu contraseña?</a></p>
           </div>
         </form>

@@ -1,3 +1,4 @@
+
 .ventana{
 	background-color: white;
 	padding: 0;
@@ -5,10 +6,17 @@
 
 .header{
 	padding: 0;
-	padding-left: 1%;
 	color: white;
-	background-color: #07243d;
+	background-color: rgba(25, 94, 71, .7);
 	font-size: 20px;
+	padding-left: 3%;
+}
+
+.ventana-container{
+	margin-top: 3%;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%; 
 }
 
 .sub-menu-container{
@@ -16,26 +24,47 @@
 }
 
 .sub-menu{
-	background-color: white;
-	border-bottom: 3px solid #07243d;
+	background-color: white !important;
+	border-bottom: 1px solid gray;
 }
 
 .sub-menu li{
 	text-align: center;
 	width: 20%;
-	border-right: 3px solid #07243d;
 }
 
 .selected a{
 	color: white !important;
 }
 
+input.user-options{
+	border: none;
+	background-color: transparent;
+	color: #262626;
+	height: 35px;
+	width: 100%;
+}
+
+input.user-options:hover{
+	color: #0d5b41;
+}
+
 .sub-menu li a{
-	color: #0f3d66;
+	color: #262626;
+	transition: color .5s;
 }
 
 .sub-menu li a:hover{
-	color: white;
+	color: #0d5b41;
+}
+
+.sub-title{
+	border-bottom: 1px solid gray;
+}
+
+.sub-title h3{
+	color: #0d5b41;
+	font-size: 20px;
 }
 
 /* In charge of deciding which container of the sub menu is going to be displayed*/
@@ -44,11 +73,9 @@
 }
 
 /* Selects the current sub menu */
-.current-submenu{
-	background-color: #07243d;
-}
+
 .current-submenu a{
-	color: white !important;
+	color: #0d5b41 !important;
 }
 
 /*  Style of default-container  */
@@ -57,7 +84,7 @@
 }
 
 h2{
-	color: #0f3d66;
+	color: #215e4a;
 	font-size: 25px;
 }
 
@@ -68,7 +95,6 @@ h2{
 .searchTerm {
   width: 80%;
   float: left;
-  border: 3px solid #0f3d66;
   padding: 5px;
   height: 40px;
   border-radius: 5px;
@@ -77,14 +103,14 @@ h2{
 }
 
 .searchTerm:focus{
-  color: #00B4CC;
+  color: #000000;
 }
 
 .searchButton{
   position: relative;
   width: 50px;
   height: 45px;
-  background: #0f3d66;
+  background: #215e4a;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;

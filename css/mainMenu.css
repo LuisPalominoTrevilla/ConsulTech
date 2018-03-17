@@ -1,0 +1,60 @@
+.menu-wrapper {
+    margin-top: 5%;
+}
+
+.menu-option-parent{
+	border: 1px solid #ffffff;
+	height: 20rem;
+	overflow: hidden;
+	padding: 0;
+}
+
+.menu-option{
+	height: 100%;
+	width: 100%;
+	transition: all .3s;
+}
+
+.menu-option a{
+	color: #ffffff;
+	font-size: 45px;
+	text-shadow: 3px 3px #000000;
+	font-weight: bolder;
+	display: inline-block;
+
+	padding-top: 5rem;
+	width: 100%;
+	height: 100%;
+}
+
+.menu-option-parent:hover .menu-option{
+	transform: scale(1.2);
+}
+
+#consult{
+	background-image: url("../img/consulta.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#directory{
+	background-image: url("../img/directorio.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#personalize{
+	background-image: url("../img/personalizar.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#tools{
+	background-image: url("../img/ajustes.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

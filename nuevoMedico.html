@@ -9,31 +9,36 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/consulta.css">
     <link rel="stylesheet" href="css/expedientes.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
   </head>
   <body>
 
+    <div id="mySidenav" class="side">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul class="side-nav primary-nav">
+        <li id="consulta" class="current nav-item">Consulta</li>
+        <li id="directorio" class="nav-item">Directorio</li>
+        <li id="personalizar" class="nav-item">Personalizar</li>
+        <li id="herramientas" class="nav-item">Herramientas</li>
+      </ul>
+    </div>
+
+    <!-- Beginning of the display code -->
+
+    <div id="main" class="large-12 columns">
+
     <div class="title-bar">
       <div class="title-bar-left">
-        <button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
+        <button class="menu-icon" type="button" data-toggle="offCanvasLeft" onclick="openNav()"></button>
         <span class="title-bar-title">ConsulTech</span>
       </div>
       <div class="title-bar-right">
         <button type="button" class="button logout">Salir</button>
       </div>
     </div>
-    
-    <div class="large-2 columns side">
-        <ul class="side-nav primary-nav">
-          <li id="consulta" class="current nav-item">Consulta</li>
-          <li id="directorio" class="nav-item">Directorio</li>
-          <li id="personalizar" class="nav-item">Personalizar</li>
-          <li id="herramientas" class="nav-item">Herramientas</li>
-        </ul>
-    </div>
 
-    <div class="large-10 columns ventana" style="margin-left: 1%">
-      <div class="large-12 columns" style="padding: 0">
-        <ul class="menu">
+    <div class="large-12 columns" style="padding: 0">
+        <ul class="menu menu-consulta">
           <li id="records">
             <a href="expedientes.html">Expedientes</a>
           </li>
@@ -50,25 +55,18 @@
             <a href="estadisticas.html">Estadisticas</a>
           </li>
         </ul>
-      </div>
+    </div>
+
+    <!-- Header sub-menus -->
+    <div class="large-12 columns header">
+      Medicos
+    </div>
+
+    <div class="large-10 columns ventana-container">
       <div class="large-12 columns ventana">
-        <!-- Header sub-menus -->
-        <div class="large-12 columns header">
-          Medicos
-        </div>
         <!-- sub menus -->
-        <div class="large-12 columns sub-menu-container">
-          <ul class="menu sub-menu">
-            <li id="nuevoMedico" class="current-submenu">
-              <a>Nuevo</a>
-            </li>
-            <li id="modificarMedico">
-              <a>Modificar</a>
-            </li>
-            <li id="eliminarMedico">
-              <a>Eliminar</a>
-            </li>
-          </ul>
+        <div class="large-12 columns sub-title">
+          <h3>Agregar Nuevo Médico</h3>
         </div>
 
         <!-- Container used for the new medics -->
@@ -125,6 +123,8 @@
           </div>
         </div>
       </div>
+    </div>
+
     </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

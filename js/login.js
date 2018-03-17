@@ -11,7 +11,3 @@ $("#show-password").click(function(){
 		isPswd= true;
 	}
 });
-
-$(".login-but").click(function(){
-	window.open("consulta.html", "_self");
-});
